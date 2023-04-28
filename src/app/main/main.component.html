@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="search-form">
+    <input type="text" class="search-input" #htmlInputElement (keyup.enter)="search(htmlInputElement.value)">
+  </div>
+
+  <ng-container *ngIf="completions.length">
+    <ng-container *ngFor="let completion of completions">
+      <p class="completion">{{ completion }}</p>
+    </ng-container>
+  </ng-container>
+  <ng-container *ngIf="isLoading">Loading...</ng-container>
+</div>

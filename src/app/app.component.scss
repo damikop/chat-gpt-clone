@@ -1,0 +1,15 @@
+
+:host {
+  display: flex;
+  height: 100%;
+}
+
+.aside {
+  background-color: rgba(32,33,35, 1);
+  width: var(--aside-width);
+}
+
+.main {
+  background-color: rgba(52,53,65, 1);
+  flex-grow: 1;
+}
